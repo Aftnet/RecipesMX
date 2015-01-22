@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c9e758d9-bf8d-40e8-9156-b19baf240634</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Recipes_MX</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DialogService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DisplayOrientationsHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NavigationHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NavigationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\PageBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\PageOrientations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PageLocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\Converters.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModelLocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ILFeaturedEntryViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ILObservableCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ILSearchViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\FeaturedAppetizer.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\FeaturedBread.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\FeaturedDesserts.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\FeaturedDrink.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\FeaturedGrill.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\FeaturedSalad.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\FeaturedSide.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\FeaturedSoup.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\FeaturedSpring.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\RecipeImg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en-US\Resources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\it-IT\Resources.resw" />
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\ja-JP\Resources.resw" />
+  </ItemGroup>
+</Project>

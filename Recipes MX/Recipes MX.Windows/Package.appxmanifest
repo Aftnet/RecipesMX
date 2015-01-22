@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="a5bc6c71-5989-4da3-9a11-6d77bfe45a28" Publisher="CN=alberto.fustinoni" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>Recipes MX.Windows</DisplayName>
+    <PublisherDisplayName>alberto.fustinoni</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Recipes_MX.Windows.App">
+      <m2:VisualElements DisplayName="Recipes MX" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Your one stop shop for recipes in the Metro environment" ForegroundText="light" BackgroundColor="#d14828">
+        <m2:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square70x70Logo="Assets\MediumLogo.png" Square310x310Logo="Assets\BigLogo.png">
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
